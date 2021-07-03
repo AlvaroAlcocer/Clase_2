@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/persona"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{cargadoPersona.nombre}}</ion-title>
+    <ion-buttons slot="end">
+      <ion-button (click)="borrarDatoPersona()">
+        <ion-icon name="trash-outline" slot="icon-only"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-col>
+    <div>
+      <img src="{{cargadoPersona.imagenUrl}}"> 
+    </div>
+    <div>
+      <p>Nombre: {{cargadoPersona.nombre}}</p>
+      <p>Apellido: {{cargadoPersona.apellido}}</p>
+      <p>Celular: {{cargadoPersona.celular}}</p>
+    </div>
+
+  </ion-col>
+
+</ion-content>

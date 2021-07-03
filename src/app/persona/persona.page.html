@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Lista de personas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list >
+    <app-tarjeta-persona *ngFor='let per of persona' 
+                        [tarjetaPersonal]=per>
+    </app-tarjeta-persona>
+  </ion-list>
+
+
+</ion-content>
